@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Inter } from "next/font/google";
 import MetaPixel from "@/components/MetaPixel";
 import CookieBanner from "@/components/CookieBanner";
@@ -9,6 +9,12 @@ const inter = Inter({
   variable: "--font-inter",
   display: "swap",
 });
+
+export const viewport: Viewport = {
+  themeColor: "#0A6EBD",
+  width: "device-width",
+  initialScale: 1,
+};
 
 export const metadata: Metadata = {
   title: "Richfeel Vadodara | Hair & Scalp Clinic – Expert Trichology Solutions",
@@ -53,10 +59,6 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={inter.variable}>
-      <head>
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <meta name="theme-color" content="#0A6EBD" />
-      </head>
       <body className="font-sans">
         <MetaPixel />
         {children}
