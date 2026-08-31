@@ -1,3 +1,5 @@
+"use client";
+
 import { Award, Microscope, Users, Star, CheckCircle2 } from "lucide-react";
 
 const features = [

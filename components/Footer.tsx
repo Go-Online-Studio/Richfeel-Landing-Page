@@ -1,3 +1,5 @@
+"use client";
+
 import { Phone, Mail, MapPin } from "lucide-react";
 
 // Inline SVG brand icons (lucide-react does not ship social brand icons)
